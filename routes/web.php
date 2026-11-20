@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/version', function () {
+Route::get('/versions', function () {
     return response()->json([
-        'version' => app()->version(),
+        'versions' => app()->version(),
     ]);
 });
